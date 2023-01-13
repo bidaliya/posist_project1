@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Navbar</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<div class="main">  
+		<input type="checkbox" id="chk" aria-hidden="true">
+			<div class="signup">
+				<form id="SignUpForm">
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<div class="user_input_group">
+                        <input type="text" name="nameEmail"  placeholder="Username / Email" required="">
+                        <span class="hide" id="S_email_error">*this is error</span>
+                    </div>
+                    <div id="formError">
+                    </div>
+					<input type="text" name="number" placeholder="PhoneNumber" required="">
+					<input type="text" name="password" placeholder="Password" required="">
+					<input type="text" name="confirmPassword" placeholder="Confirm Password" required="">
+					<button type="submit">Sign up</button>
+				</form>
+			</div>
+            
+			<div class="login">
+				<form id="LoginForm">
+					<label for="chk" aria-hidden="true">Login</label>
+					<div class="user_input_group">
+                        <input type="email" name="nameEmail" placeholder="Email" required="">
+                        <span class="hide" id="L_email_error">*this is error</span>
+                    </div>
+					<input type="password" name="password" placeholder="Password" required="">
+					<button>Login</button>
+				</form>
+			</div>
+	</div>    
+
+
+    <!-- <script>
+
+function signupValidation(){
+    let username = document.forms[SignUp_form][S_username].value;
+    console.log(username)
+}
+    </script> -->
+    <script src="form.js"></script>
+    
+</body>
+</html>
